@@ -1,0 +1,27 @@
+name:                haskell-educational-prelude
+version:             0.1.0.0
+synopsis:            A test project for small Prelude replacements for Haskell education
+
+license:             MIT
+license-file:        LICENSE.md
+author:              Mihai Maruseac
+maintainer:          Mihai Maruseac <mihai.maruseac@gmail.com.
+copyright:           © 2020 Mihai Maruseac <mihai.maruseac@gmail.com.
+homepage:            https://github.com/mihaimaruseac/x
+bug-reports:         https://github.com/mihaimaruseac/x/issues
+
+category:            Test
+build-type:          Simple
+stability:           alpha (experimental)
+cabal-version:       >=1.10
+
+extra-source-files:
+  README.md
+  stack.yaml
+
+executable test
+  default-language:  Haskell2010
+  ghc-options:       -Wall -Werror -O2 -threaded -rtsopts -with-rtsopts=-N
+  hs-source-dirs:    src
+  main-is:           Main.hs
+  build-depends:     base-noprelude >= 4.13 && < 4.14
