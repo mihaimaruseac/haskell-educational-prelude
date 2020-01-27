@@ -24,4 +24,5 @@ executable test
   ghc-options:       -Wall -Werror -O2 -threaded -rtsopts -with-rtsopts=-N
   hs-source-dirs:    src
   main-is:           Main.hs
-  build-depends:     base-noprelude
+  build-depends:     base, base-noprelude
+  other-modules:     Prelude
